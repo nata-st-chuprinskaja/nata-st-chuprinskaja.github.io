@@ -1,0 +1,66 @@
+body{
+    min-width: 300px;
+    width: 80vw;    
+    max-width: 960px;
+    margin: auto;
+    text-align: justify;
+}
+
+h1{
+    color: green;
+    text-align: center;
+}
+div>span{
+    color: red;
+}
+div>span+span{
+    color:yellow;
+}
+.special{
+    color: orange;
+}
+div>span:last-child{
+    color: green;
+}
+a[href*="google"] {
+    color: green;
+}
+a[title]{
+    color: red;
+}
+b{
+    color: violet;
+}
+span{
+    color: blue;
+}
+span+span{
+    color: green;
+}
+span+span+span{
+    color: black;
+}
+p+div+div{
+    color: pink;
+}
+ul>li:nth-child(odd){
+    color: red;
+}
+ul>li:nth-child(even){
+    background: yellow;
+}
+ul>li:last-child{
+    color: violet;
+}
+ol>li:nth-child(odd){
+    color:blue;
+}
+ol>li:nth-child(even){
+    color: green;
+}
+ol>li:last-child{
+    color:orange;
+}
+ol>li:nth-child(4){
+    background: lightgray;
+}

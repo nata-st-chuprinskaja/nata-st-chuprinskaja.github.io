@@ -1,0 +1,31 @@
+h1 {
+    text-shadow: -1px -1px 4px white;
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+button {
+    color: white;
+    font-weight: 600;
+    border: 3px solid #3150d8;
+    border-radius: 10px/10px;
+}
+.button1 {
+    background: rgba(75,133,199);
+}
+.button2 {
+    background: orangered;
+}
+.kartinka {
+    height: 300px;
+    background-size: cover;
+    background-image: url(https://nata5101.neocities.org/assets/img/hiclipart.com.png);
+}
+main {
+    width: 600px;
+    padding: 20px;
+    margin: auto; 
+    background-image:linear-gradient(125deg, rgb(54,81,217), rgb(207,56,148));
+    color: white;
+}

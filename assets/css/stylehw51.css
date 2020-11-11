@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+}
+main{
+    width: 40vw;
+    border: 1px solid rgb(218,217,217);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: auto;
+}
+img[alt=OCTOBER] {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.date {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    background: rgb(196, 196, 196);
+    margin-top: -5px;
+    padding: 5px;
+}
+h1 {
+    text-align: center;
+    font-size: 20px;
+}
+p {
+    text-align: justify;
+    margin: 5px;
+}
+.niz {
+    background: rgb(0, 0, 0);
+    padding: 5px;
+    color: white;
+}
+a {
+    color: black;
+}
+.like {
+    float: right;
+}
+.rating-itog {
+	overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+.rating-itog:not(:checked) > input {
+	display: none;
+}
+.rating-itog:not(:checked) > label {
+	float: right;
+	padding: 2px;
+	cursor: pointer;
+	font-size: 25px;
+	line-height: 35px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-itog:not(:checked) > label:before {
+	content: '★';
+}
+.rating-itog > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-itog:not(:checked) > label:hover,
+.rating-itog:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-itog > input:checked + label:hover,
+.rating-itog > input:checked + label:hover ~ label,
+.rating-itog > input:checked ~ label:hover,
+.rating-itog > input:checked ~ label:hover ~ label,
+.rating-itog > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-itog > label:active {
+	position: relative;
+}

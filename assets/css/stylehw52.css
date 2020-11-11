@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+main{
+    width: 40vw;
+    border: 1px solid rgb(218,217,217);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: auto;
+}
+img[alt=product] {
+    width: 95%;
+    margin: 2px auto;
+    padding: 0;
+    display: block;
+}
+.cover{
+    margin:5px;
+}
+h4{
+    text-align:left;
+    font-weight: 400;
+}
+.price{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+span:first-child {
+    color: green;
+    margin: 10px 5px;
+}
+span+span {
+    color: gray;
+    text-decoration: line-through;
+}
+span:last-child {
+    color:red;
+    text-decoration: none
+}
+button:first-child {
+    background: gray;
+    color: white;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+.rating-itog {
+	overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+.rating-itog:not(:checked) > input {
+	display: none;
+}
+.rating-itog:not(:checked) > label {
+	float: right;
+	padding: 2px;
+	cursor: pointer;
+	font-size: 25px;
+	line-height: 35px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-itog:not(:checked) > label:before {
+	content: '★';
+}
+.rating-itog > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-itog:not(:checked) > label:hover,
+.rating-itog:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-itog > input:checked + label:hover,
+.rating-itog > input:checked + label:hover ~ label,
+.rating-itog > input:checked ~ label:hover,
+.rating-itog > input:checked ~ label:hover ~ label,
+.rating-itog > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-itog > label:active {
+	position: relative;
+}
