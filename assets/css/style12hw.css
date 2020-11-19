@@ -1,0 +1,75 @@
+.b,.d,.c{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 10px;
+    text-shadow: 0 0 6px black;
+    background-size: cover;
+    background-position:center;
+}
+.b{
+    background-image: url(../img/foto12.jpg);
+}
+.c{
+    background-image: url(../img/foto13.jpg);
+}
+.d{
+    background-image: url(../img/foto14.jpg);
+}
+.cadr{
+    min-width: 250px;
+    max-width: 350px;
+}
+.gridbox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+
+@media (min-width:576px){
+    .gridbox1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-gap: 10px;
+        grid-template-areas: "a a a"
+                             "b c d";
+    }
+    .gridbox2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas: "card1 card2 card3"
+                             "card4 card5 card6"
+                             "card7 card8 ."
+    }
+    .gridbox3{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: ". call .";
+    }
+    .listgroup{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(4, 25%);
+        grid-gap: 1px;
+        grid-template-areas: "lg1 lg2 lg3 lg4"
+    }
+}
+@media (min-width:1000px){
+    .gridbox2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas: "card1 card2 card3 card4"
+                             "card5 card6 card7 card8";
+    }
+}
